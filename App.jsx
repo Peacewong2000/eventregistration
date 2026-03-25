@@ -17,7 +17,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-const appId = "my-ngo-event-system"; // 這裡可以隨意取一個專屬於您這個系統的英文 ID
+const appId = "eventregistration"; // 這裡可以隨意取一個專屬於您這個系統的英文 ID
 
 export default function App() {
   const [role, setRole] = useState('admin'); // 'admin' | 'participant' | 'staff'
